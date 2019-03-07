@@ -1,0 +1,30 @@
+<html>
+<head>
+   <title>Addy</title>
+<script src="/brython.js"></script>
+</head>
+<body onload="brython()">
+<script type="text/python">
+from browser import document, alert
+
+# bind event 'click' on button to function echo
+
+def echo(ev):
+    alert(document["zone"].value)
+
+document["mybutton"].bind("click", echo)
+</script>
+<input id="zone">
+<button id="mybutton">click !</button>
+   </body>
+   
+   <body>
+     <h1>I am Addy the Siberian Husky!</h1>
+     <p>I am eight years old and I live with Jessica.
+        I am from Canada and I enjoy running in the mountains.
+        I do not enjoy: swimming.</p>
+     <img alt="Addy" src= "addy.jpg" />
+     <a href= "https://en.wikipedia.org/wiki/Siberian_Husky">Wikipedia for Sibes</a>
+     </body>
+</html>
+
